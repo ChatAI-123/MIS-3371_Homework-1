@@ -105,13 +105,20 @@ textarea {
     vertical-align: center;
 }
 
+#date-cell {
+    text-align: right;
+    vertical-align: bottom;
+}
+
 #date {
     text-align: right;
     vertical-align: bottom;
     font-family: var(--main-font-family);
     font-weight: normal;
-    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
 }
+
 #pg-description {
     text-align: center;
     font-family: var(--main-font-family);
