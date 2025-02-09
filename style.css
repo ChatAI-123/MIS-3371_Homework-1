@@ -111,8 +111,6 @@ textarea {
 }
 
 #date {
-    text-align: right;
-    vertical-align: bottom;
     font-family: var(--main-font-family);
     font-weight: normal;
     margin-bottom: 5px;
