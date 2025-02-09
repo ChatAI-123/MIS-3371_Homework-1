@@ -1,9 +1,10 @@
 /*
-Name: 
-Date created: 
-Date last edited: 
-Version: 
-Description: Homework 1 JS 
+Program Name: main.js
+Name: Andres Cortes
+Date Created: 02/05/2025
+Date Last Edited: 02/09/2025
+Version: 1.1
+Description: Homework 1 JS
 Credits: The skeleton of this JS code is from MISSO. No public link to cite.
 */
 
