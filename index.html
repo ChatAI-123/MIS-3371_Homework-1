@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+    Name: Andres Cortes
+    Date created: 02/05/2025
+    Date last edited: 02/07/2025
+    Version: 1.0
+    Description: Homework 1 HTML 
+    Credits: The skeleton of this HTML code is from MISSO. No public link to cite.
+    -->
+    <head>
+        <!-- Credit fav snippet | URL: https://stackoverflow.com/questions/9943771/adding-a-favicon-to-a-static-html-page -->
+        <link rel="icon" type="image/png" href="Images/medical-logo_fav-icon.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Patient Registration</title>
+    </head>
+    <body>
+        <header>
+            <table>
+                <tr>
+                    <td id="logo" width="20%">
+                        <img src="Images/medical_logo.png" alt="Vital Clinic's Logo" width="80px"/>
+                    </td>
+                    <td>
+                        <h1>Vital Clinic</h1>
+                    </td>
+                    <td id="date" width="20%">
+                        <p>Today's Date: <span id="today"></span></p>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <hr>
+        <form action="thank-you.html">
+            <div class="format">
+                <h2>Create Account</h2>
+                <!-- Credits preface | URL: https://www.mykelseyonline.com/MyChart/Signup -->
+                <p id="pg-description">We need some information in order to grant you a Vital Clinic account.
+                    Enter your demographics here. When your form is completed, you will
+                    be able to use your username and password to sign in and begin using the Vital Clinic online portal.</p>
+                <table>
+                    <!-- 2 Columns | About 18 Rows -->
+                    <!-- Section 1 | Identity -->
+                    <tr> <td colspan="100"> <h3>Identity</h3> </td> </tr>
+                    <tr>
+                        <td class="td1"> <label for="fname">*First Name:</label> </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="fname"
+                                id="fname"
+                                maxlength="30"
+                                placeholder="Andres"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="mname">Middle Initial:</label> </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="mname"
+                                id="mname"
+                                maxlength="1"
+                                placeholder="M">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="lname">Last Name:</label> </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="lname"
+                                id="lname"
+                                maxlength="30"
+                                placeholder="Cortes"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="dob">Date of Birth:</label> </td>
+                        <td>
+                            <input
+                                type="date"
+                                id="dob"
+                                name="dob"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="ssn">*Social Security Number:</label> </td>
+                        <td>
+                            <input
+                                type="password"
+                                name="ssn"
+                                id="ssn"
+                                minlength="9"
+                                maxlength="11"
+                                placeholder="###-##-####"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="pgender">Gender:</label> </td>
+                        <td class="td2">
+                            <input
+                                type="radio"
+                                name="pgender"
+                                value='M'
+                                id="g1">
+                            <label for="pgender">Male</label>
+                            <input
+                                type="radio"
+                                name="pgender"
+                                value='F'
+                                id="g2">
+                            <label for="pgender">Female</label>
+                            <br>
+                            <input
+                                type="radio"
+                                name="pgender"
+                                value='X'
+                                id="g3">
+                            <label for="pgender">Opt Not To Disclose</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="history">Select your Ethnicity:<br>(multi-select)</label> </td>
+                        <td class="td2">
+
+                            <input
+                                type="checkbox"
+                                id="pacific"
+                                name="ethnicity"
+                                value="pacific">
+                            <label for="pacific">Native Hawaiian or Other Pacific Islander</label><br>
+
+                            <input
+                                type="checkbox"
+                                id="native"
+                                name="ethnicity"
+                                value="native">
+                            <label for="native">American Indian or Alaska Native</label><br>
+                            
+                            <input
+                                type="checkbox"
+                                id="middle-eastern"
+                                name="ethnicity"
+                                value="middle-eastern">
+                            <label for="middle-eastern">Middle Eastern or North African</label><br>
+
+                            <input
+                                type="checkbox"
+                                id="black"
+                                name="ethnicity"
+                                value="black">
+                            <label for="black">Black or African American</label><br>
+
+                            <input
+                                type="checkbox"
+                                id="white"
+                                name="ethnicity"
+                                value="white">
+                            <label for="white">Non-Hispanic White</label>
+
+                            <input
+                                type="checkbox"
+                                id="hispanic"
+                                name="ethnicity"
+                                value="hispanic">
+                            <label for="hispanic">Hispanic or Latino</label><br>
+                            
+                            <input
+                                type="checkbox"
+                                id="asian"
+                                name="ethnicity"
+                                value="asian">
+                            <label for="asian">Asian</label>
+                            
+                            <input
+                                type="checkbox"
+                                id="other"
+                                name="ethnicity"
+                                value="other">
+                            <label for="other">Other</label><br>
+                        </td>
+                    </tr>
+                    <!-- Section 1 END | Identity -->
+                    <!-- Section 2 | Location -->
+                    <tr> <td colspan="100"> <h3>Location</h3> </td> </tr>
+                    <tr>
+                        <td class="td1"> <label for="address1">Address Line 1:</label> </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="address1"
+                                id="address1"
+                                maxlength="30"
+                                placeholder="1234 Address"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="address2">Address Line 2:</label> </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="address2"
+                                id="address2"
+                                maxlength="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="city">City:</label> </td>
+                        <td>
+                            <input
+                            type="text"
+                            name="city"
+                            id="city"
+                            required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td1"> <label for="state">State:</label> </td>
+                        <td>
+                            <!-- Credit state/territory snippet | URL: https://www.freeformatter.com/usa-state-list-html-select.html -->
+                            <select required>
+                                <option selected disabled hidden></option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="zip">Zip Code:</label> </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="zip"
+                                id="zip"
+                                required>
+                        </td>
+                    </tr>
+                    <!-- Section 2 END | Location -->
+                    <!-- Section 3 | Contact -->
+                    <tr> <td colspan="100"> <h3>Contact</h3> </td> </tr>
+                    <tr>
+                        <td class="td1"> <label for="email">Email:</label> </td>
+                        <td>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="example@ex.com"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="phone">Phone:</label> </td>
+                        <td>
+                            <input
+                                type="tel"
+                                name="phone"
+                                id="phone"
+                                placeholder="123-456-7890"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="language">Preferred Language:</label> </td>
+                        <td class="td2">
+                            <input
+                                type="radio"
+                                name="language"
+                                id="language1"
+                                value="en">
+                            <label for="language">English</label>
+                            <input
+                                type="radio"
+                                name="language"
+                                id="language2"
+                                value="es">
+                            <label for="language">Spanish</label>
+                            <input
+                                type="radio"
+                                name="language"
+                                id="language3"
+                                value="o">
+                            <label for="language">Other</label>
+                        </td>
+                    </tr>
+                    <!-- Section 3 END | Contact -->
+                    <!-- Section 4 | Health Questions -->
+                    <tr> <td colspan="100"> <h3>Other</h3> </td> </tr>
+                    <tr>
+                        <td class="td1">Have you visited Vital Clinic Before?</td>
+                        <td class="td2">
+                            <input
+                                type="radio"
+                                name="priorClient"
+                                id="priorClient1"
+                                value='y'>
+                            <label for="priorClient">Yes</label>
+                            <input
+                                type="radio"
+                                name="priorClient"
+                                id="priorClient2"
+                                value='n'>
+                            <label for="priorClient">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="notes">Previous Visits:</label> </td>
+                        <td>
+                            <textarea
+                                id="notes"
+                                name="notes"
+                                rows="4"
+                                cols="40"
+                                placeholder="If applicable, tell us about your prior visits here..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="range">Rate your Previous Visits:<br/>(1 is Poor | 10 is Excellent)</label> </td>
+                        <td>
+                            <input
+                                type="range"
+                                name="range"
+                                id="range"
+                                min="1"
+                                max="10"
+                                value="0">
+                            <span id="range-slider"></span>
+                        </td>
+                    </tr>
+                    <!-- Section 4 END | Health Questions -->
+                    <!-- Section 5 | Acccount Credentials -->
+                    <tr> <td colspan="100"> <h3>Credentials</h3> </td> </tr>
+                    <tr>
+                        <td class="td1"> <label for="uid">User ID:</label> </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="uid"
+                                id="uid"
+                                maxlength="20"
+                                title="Please enter a user ID:"
+                                placeholder="Your user ID"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="pword">Password:</label> </td>
+                        <td>
+                            <input
+                                type="password"
+                                name="pword"
+                                id="pword"
+                                minlength="10"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1"> <label for="confirm-pword">Confirm Password:</label> </td>
+                        <td>
+                            <input
+                                type="password"
+                                name="confirm-pword"
+                                id="confirm-pword"
+                                minlength="10"
+                                required>
+                        </td>
+                    </tr>
+                    <!-- Section 5 END | Acccount Credentials -->
+                </table>
+                <center>
+                    <input type="submit" name="submit">
+                    <input type="reset" name="reset"> 
+                </center>
+            </div>
+        </form>
+        <footer>
+            <table>
+                <tr>
+                    <td id="contact">
+                        <span>© 2025 Vital Clinic <a href="contact.html">Contact Us!</a></span>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
