@@ -3,7 +3,7 @@
     Program Name: index.html
     Name: Andres Cortes
     Date Created: 02/05/2025
-    Date Last Edited: 02/09/2025
+    Date Last Edited: 02/10/2025
     Version: 1.1
     Description: Homework 1 HTML
     Credits: The skeleton of this HTML code is from MISSO. No public link to cite.
@@ -108,7 +108,8 @@
                                 type="radio"
                                 name="gender"
                                 value='M'
-                                id="g1">
+                                id="g1"
+                                required>
                             <label for="gender">Male</label>
                             <input
                                 type="radio"
@@ -218,6 +219,7 @@
                             type="text"
                             name="city"
                             id="city"
+                            maxlength="30"
                             required>
                         </td>
                     </tr>
@@ -289,6 +291,7 @@
                                 type="text"
                                 name="zip"
                                 id="zip"
+                                maxlength="10"
                                 required>
                         </td>
                     </tr>
@@ -303,6 +306,7 @@
                                 name="email"
                                 id="email"
                                 placeholder="example@ex.com"
+                                maxlength="40"
                                 required>
                         </td>
                     </tr>
@@ -314,6 +318,7 @@
                                 name="phone"
                                 id="phone"
                                 placeholder="123-456-7890"
+                                maxlength="12"
                                 required>
                         </td>
                     </tr>
@@ -324,7 +329,8 @@
                                 type="radio"
                                 name="language"
                                 id="language1"
-                                value="en">
+                                value="en"
+                                required>
                             <label for="language">English</label>
                             <input
                                 type="radio"
@@ -341,7 +347,7 @@
                         </td>
                     </tr>
                     <!-- Section 3 END | Contact -->
-                    <!-- Section 4 | Other -->
+                    <!-- Section 4 | Prior History -->
                     <tr> <td colspan="100"> <h3>Prior History</h3> </td> </tr>
                     <tr>
                         <td class="td1">Have you visited Vital Clinic Before?</td>
@@ -350,7 +356,8 @@
                                 type="radio"
                                 name="priorClient"
                                 id="priorClient1"
-                                value='y'>
+                                value='y'
+                                required>
                             <label for="priorClient">Yes</label>
                             <input
                                 type="radio"
@@ -368,6 +375,7 @@
                                 name="previousVisitsNotes"
                                 rows="4"
                                 cols="40"
+                                maxlength="1000"
                                 placeholder="If applicable, tell us about your prior visits here..."></textarea>
                         </td>
                     </tr>
@@ -384,7 +392,7 @@
                             <span id="rating-slider"></span>
                         </td>
                     </tr>
-                    <!-- Section 4 END | Other -->
+                    <!-- Section 4 END | Prior History -->
                     <!-- Section 5 | Acccount Credentials -->
                     <tr> <td colspan="100"> <h3>Credentials</h3> </td> </tr>
                     <tr>
@@ -408,6 +416,7 @@
                                 name="password"
                                 id="password"
                                 minlength="10"
+                                maxlength="64"
                                 required>
                         </td>
                     </tr>
@@ -419,6 +428,7 @@
                                 name="confirmPassword"
                                 id="confirmPassword"
                                 minlength="10"
+                                maxlength="64"
                                 required>
                         </td>
                     </tr>
