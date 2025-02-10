@@ -14,8 +14,8 @@ let text = d.toLocaleDateString();
 document.getElementById("today").innerHTML = text;
 
 //name slider js code
-let slider = document.getElementById("range");
-let output = document.getElementById("range-slider");
+let slider = document.getElementById("visitSatisfactionRating");
+let output = document.getElementById("rating-slider");
 output.innerHTML = slider.value;
 
 slider.oninput = function() {
