@@ -58,10 +58,6 @@ h1, h2, h3 {
     flex-grow: 1;
 }
 
-h3 {
-    margin-bottom: 10px;
-}
-
 input {
     text-align: left;
     font-family: var(--main-font-family);
@@ -88,6 +84,15 @@ textarea {
     font-weight: lighter;
 }
 
+.button-container {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+h3.section-header {
+    margin-bottom: 10px
+}
+
 p.center {
     text-align: center;
     font-family: var(--main-font-family);
@@ -96,14 +101,20 @@ p.center {
     margin-left: 12.5%;
 }
 
-#logo {
+#logo-cell {
     text-align: left;
     vertical-align: center;
+    width: 20%;
+}
+
+#logo{
+    width: 80px;
 }
 
 #date-cell {
     text-align: right;
     vertical-align: bottom;
+    width: 20%;
 }
 
 #date {

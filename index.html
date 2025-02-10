@@ -19,13 +19,13 @@
         <header>
             <table>
                 <tr>
-                    <td id="logo" width="20%">
-                        <img src="Images/medical_logo.png" alt="Vital Clinic's Logo" width="80px"/>
+                    <td id="logo-cell">
+                        <img src="Images/medical_logo.png" alt="Vital Clinic's Logo" id="logo"/>
                     </td>
                     <td>
                         <h1>Vital Clinic</h1>
                     </td>
-                    <td id="date-cell" width="20%">
+                    <td id="date-cell">
                         <p id="date">Today's Date: <span id="today"></span></p>
                     </td>
                 </tr>
@@ -43,7 +43,7 @@
                 <table>
                     <!-- 2 Columns | About 18 Rows -->
                     <!-- Section 1 | Identity -->
-                    <tr> <td colspan="100"> <h3>Identity</h3> </td> </tr>
+                    <tr> <td colspan="100"> <h3 class="section-header">Identity</h3> </td> </tr>
                     <tr>
                         <td class="td1"> <label for="firstName">*First Name:</label> </td>
                         <td>
@@ -190,7 +190,7 @@
                     </tr>
                     <!-- Section 1 END | Identity -->
                     <!-- Section 2 | Location -->
-                    <tr> <td colspan="100"> <h3>Location</h3> </td> </tr>
+                    <tr> <td colspan="100"> <h3 class="section-header">Location</h3> </td> </tr>
                     <tr>
                         <td class="td1"> <label for="address1">*Address Line 1:</label> </td>
                         <td>
@@ -298,7 +298,7 @@
                     </tr>
                     <!-- Section 2 END | Location -->
                     <!-- Section 3 | Contact -->
-                    <tr> <td colspan="100"> <h3>Contact</h3> </td> </tr>
+                    <tr> <td colspan="100"> <h3 class="section-header">Contact</h3> </td> </tr>
                     <tr>
                         <td class="td1"> <label for="email">*Email:</label> </td>
                         <td>
@@ -349,7 +349,7 @@
                     </tr>
                     <!-- Section 3 END | Contact -->
                     <!-- Section 4 | Prior History -->
-                    <tr> <td colspan="100"> <h3>Prior History</h3> </td> </tr>
+                    <tr> <td colspan="100"> <h3 class="section-header">Prior History</h3> </td> </tr>
                     <tr>
                         <td class="td1">*Have you visited Vital Clinic Before?</td>
                         <td class="td2">
@@ -395,7 +395,7 @@
                     </tr>
                     <!-- Section 4 END | Prior History -->
                     <!-- Section 5 | Acccount Credentials -->
-                    <tr> <td colspan="100"> <h3>Credentials</h3> </td> </tr>
+                    <tr> <td colspan="100"> <h3 class="section-header">Credentials</h3> </td> </tr>
                     <tr>
                         <td class="td1"> <label for="usernameID">*User ID:</label> </td>
                         <td>
@@ -435,10 +435,10 @@
                     </tr>
                     <!-- Section 5 END | Acccount Credentials -->
                 </table>
-                <center>
+                <div  class="button-container">
                     <input type="submit" name="submit">
-                    <input type="reset" name="reset"> 
-                </center>
+                    <input type="reset" name="reset">
+                </div> 
             </div>
         </form>
         <footer>
