@@ -39,12 +39,10 @@ footer {
     font-weight: normal;
 }
 
-form {
-    flex-grow: 1;
-}
-
 main {
     flex-grow: 1;
+    width: 100%;
+    padding: 40px 0px;
 }
 
 table {
@@ -84,9 +82,16 @@ textarea {
     font-weight: lighter;
 }
 
+.form-container {
+    flex-grow: 1;
+    width: 75%;
+    padding-left: 12.5%;
+    
+}
+
 .button-container {
     text-align: center;
-    margin: 15px 0px;
+    margin: 0px 0px;
 }
 
 h3.section-header {
@@ -99,6 +104,10 @@ p.center {
     font-weight: normal;
     width: 75%;
     margin-left: 12.5%;
+}
+
+#upper-header {
+    margin-top: 0px;
 }
 
 #logo-cell {
