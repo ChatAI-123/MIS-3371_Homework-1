@@ -88,6 +88,14 @@ textarea {
     font-weight: lighter;
 }
 
+p.center {
+    text-align: center;
+    font-family: var(--main-font-family);
+    font-weight: normal;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
 #logo {
     text-align: left;
     vertical-align: center;
@@ -103,14 +111,6 @@ textarea {
     font-weight: normal;
     margin-bottom: 5px;
     margin-right: 10px;
-}
-
-#pg-description {
-    text-align: center;
-    font-family: var(--main-font-family);
-    font-weight: normal;
-    width: 75%;
-    margin-left: 12.5%;
 }
 
 #contact {
