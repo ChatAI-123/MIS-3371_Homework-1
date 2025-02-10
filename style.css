@@ -68,6 +68,14 @@ textarea {
     font-weight: normal;
 }
 
+a {
+    color: #0000EE;
+}
+
+a:visited {
+    color: #551A8B;
+}
+
 .td1 {
     text-align: right;
     font-family: var(--main-font-family);
